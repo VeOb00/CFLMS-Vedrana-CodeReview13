@@ -16,11 +16,11 @@
             <td>{{ event.name }}</td>
         </tr>
         <tr>
-            <th>Eventdate</th>
+            <th>Event date</th>
             <td>{{ event.eventdate ? event.eventdate|date('Y-m-d') : '' }}</td>
         </tr>
         <tr>
-            <th>Eventtime</th>
+            <th>Event time</th>
             <td>{{ event.eventtime ? event.eventtime|date('H:i:s') : '' }}</td>
         </tr>
         <tr>
@@ -28,12 +28,11 @@
             <td>{{ event.description }}</td>
         </tr>
         <tr>
-            <th>Descriptionlong</th>
+            <th>Description long</th>
             <td>{{ event.descriptionlong }}</td>
         </tr>
         <tr>
-            <th>Image name</th>
-            {# <td>{{ event.image }}</td> #}
+            <th>Image</th>
             <td>
                 <img src="{{ asset("build/upload/"~event.image) }}" alt="" class="img-thumbnail img-preview">
             </td>
@@ -47,7 +46,7 @@
             <td>{{ event.email }}</td>
         </tr>
         <tr>
-            <th>Phonenr</th>
+            <th>Phone Nr.</th>
             <td>{{ event.phonenr }}</td>
         </tr>
         <tr>
@@ -63,7 +62,7 @@
             <td>{{ event.address }}</td>
         </tr>
         <tr>
-            <th>Eventurl</th>
+            <th>Event URL</th>
             <td>{{ event.eventurl }}</td>
         </tr>
         <tr>
