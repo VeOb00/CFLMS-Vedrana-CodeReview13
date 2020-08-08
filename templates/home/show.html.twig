@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Event Details{% endblock %}
+{% block jumboTitle %}Event Details{% endblock %}
+{# {% block jumboLeadtext %}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur atque eligendi error fugiat, nulla pariatur sapiente voluptates! Alias amet deserunt error incidunt, laborum magnam molestiae natus provident sed vitae.{% endblock %} #}
+{% block body %}
+    <div class="container">
+        <h3 class="text-primary text-uppercase">{{ event.name }}</h3>
+        <p>{{ event.description }} <br>
+            <span class="small text-uppercase">{{ event.category }}</span>
+        </p>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <dl>
+                    <dt>Event Dates:</dt>
+                    <dd>Date: {{ event.eventdate ? event.eventdate|date('d.m.yy') : '' }}</dd>
+                    <dd>Time: {{ event.eventtime ? event.eventtime|date('H:i') : '' }}</dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt>Event Address:</dt>
+                    <dd>
+                        <address>
+                            {{ event.address }}<br>
+                            {{ event.city }}<br>
+                            {{ event.country }}<br>
+                        </address>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt>Tickets and Info:</dt>
+                    <dd><a href="mailto:{{ event.eventurl }}">{{ event.email }}</a></dd>
+                    <dd><a href="tel:{{ event.phonenr }}">{{ event.phonenr }}</a></dd>
+                    <dd><a href="{{ event.eventurl }}">{{ event.eventurl }}</a></dd>
+                </dl>
+            </div>
+
+        </div>
+
+
+        <img class="img-fluid my-3" src="{{ asset("build/upload/"~event.image) }}" alt="{{ event.name }}">
+        <p>{{ event.descriptionlong }}</p>
+        <hr>
+
+        <p><b>Capacity:</b> max. {{ event.capacity }} people</p>
+
+
+        
+
+        <a class="btn btn-outline-secondary rounded-0" href="{{ path('home_index') }}">back to events</a>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}

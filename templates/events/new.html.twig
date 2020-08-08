@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Events{% endblock %}
+{% block jumboTitle %}New Events{% endblock %}
+{% block jumboLeadtext %} create a new event {% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="form-group col-lg-8">
+            {{ include('events/_form.html.twig') }}
+        </div>
+        <div class="col-lg-3 mt-5 mx-auto">
+            <a class="btn btn-outline-secondary btn-block btn-lg rounded-0" href="{{ path('events_index') }}">Back to list</a>
+        </div>
+    </div>
+{% endblock %}

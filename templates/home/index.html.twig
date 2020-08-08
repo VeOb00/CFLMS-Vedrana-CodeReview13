@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}BigEvents{% endblock %}
+{% block jumboTitle %}Big Events{% endblock %}
+{% block jumboLeadtext %}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur atque eligendi error fugiat, nulla pariatur sapiente voluptates! Alias amet deserunt error incidunt, laborum magnam molestiae natus provident sed vitae.{% endblock %}
+{% block body %}
+
+    <div class="row">
+        <div class="col mx-auto text-center mb-3">
+            <a href="{{ path('home_index') }}" class="btn btn-outline-secondary rounded-0">all events</a>
+            {% for categoryType in categoryTypes %}
+                <a href="{{ path('home_filter', {'category': categoryType}) }}"
+                   class="btn btn-outline-secondary rounded-0">{{ categoryType }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row">
+        {% for event in events %}
+            <div class="col-md-6 col-lg-4 mb-5 ">
+                <div class="card mx-2 text-center border-0 rounded-0 bg-none">
+                    <a href="{{ path('home_show', {'id': event.id}) }}">
+                        <img src="{{ asset("build/upload/"~event.image) }}" class="card-img-top w-100 rounded-0"
+                             alt="{{ event.name }}">
+                    </a>
+                    <div class="card-body pb-0 pt-1">
+                        <small class="text-muted">{{ event.category }}</small>
+                        <h5 class="card-title text-uppercase">{{ event.name }}</h5>
+                        <p class="card-text mb-0 pb-0">{{ event.description }}</p>
+                    </div>
+                    <div class="card-footer pt-0 bg-none border-0">
+                        <small class="text-muted">{{ event.eventdate ? event.eventdate|date('d.m.yy') : '' }}, </small>
+                        <small class="text-muted">{{ event.eventtime ? event.eventtime|date('H:i') : '' }}</small><br>
+                        <a href="{{ path('home_show', {'id': event.id}) }}"><small class="text-muted">More info</small></a>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div>
+                <p>no records found</p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}

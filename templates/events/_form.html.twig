@@ -1,0 +1,112 @@
+{# {{ form_start(form) }} #}
+{# {{ form_widget(form) }} #}
+{# <button class="btn">{{ button_label|default('Save') }}</button> #}
+{# {{ form_end(form) }} #}
+
+
+{{ form_start(form) }}
+
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.name) }}
+        {{ form_widget(form.name) }}
+        {{ form_help(form.name) }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.description) }}
+        {{ form_widget(form.description) }}
+        {{ form_help(form.description) }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.eventdate) }}
+        {{ form_widget(form.eventdate) }}
+        {{ form_help(form.eventdate) }}
+    </div>
+    <div class="form-group col">
+        {{ form_label(form.eventtime) }}
+        {{ form_widget(form.eventtime) }}
+        {{ form_help(form.eventtime) }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.descriptionlong) }}
+        {{ form_widget(form.descriptionlong, {'attr': {'rows': '8'}}) }}
+        {{ form_help(form.descriptionlong) }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.image) }}
+        <div class="row">
+            <div class="col">
+                {{ form_widget(form.image) }}
+                {{ form_help(form.image) }}
+                {% if oldImage is defined %}
+                    <small>Current set image: </small>
+                    <img src="{{ asset("build/upload/"~oldImage) }}" alt="" class="img-thumbnail img-preview"
+                         width="100">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="form-group col">
+        {{ form_label(form.capacity) }}
+        {{ form_widget(form.capacity) }}
+        {{ form_help(form.capacity) }}
+    </div>
+    <div class="form-group col">
+        {{ form_label(form.category) }}
+        {{ form_widget(form.category) }}
+        {{ form_help(form.category) }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.email) }}
+        {{ form_widget(form.email) }}
+        {{ form_help(form.email) }}
+    </div>
+    <div class="form-group col">
+        {{ form_label(form.phonenr) }}
+        {{ form_widget(form.phonenr) }}
+        {{ form_help(form.phonenr) }}
+    </div>
+    <div class="form-group col">
+        {{ form_label(form.eventurl) }}
+        {{ form_widget(form.eventurl) }}
+        {{ form_help(form.eventurl) }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.country) }}
+        {{ form_widget(form.country) }}
+        {{ form_help(form.country) }}
+    </div>
+    <div class="form-group col">
+        {{ form_label(form.city) }}
+        {{ form_widget(form.city) }}
+        {{ form_help(form.city) }}
+    </div>
+    <div class="form-group col">
+        {{ form_label(form.zipcode) }}
+        {{ form_widget(form.zipcode) }}
+        {{ form_help(form.zipcode) }}
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col">
+        {{ form_label(form.address) }}
+        {{ form_widget(form.address) }}
+        {{ form_help(form.address) }}
+    </div>
+</div>
+<button class="btn btn-outline-primary btn-block btn-lg col-md-4 my-3 rounded-0">{{ button_label|default('Save') }}</button>
+
+
+{{ form_end(form) }}

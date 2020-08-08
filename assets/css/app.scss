@@ -1,0 +1,94 @@
+//bootstrap colors
+$primary: #012623;
+$secondary: #01403A;
+$danger: #260101;
+$gray-600: #01403A;
+$gray-800: #012326;
+$gray-400: #648C88;
+$gray-300: lighten(#648C88, 20%);
+@import "~bootstrap/scss/bootstrap";
+
+
+
+$c-primary: #252626;
+$c-contrast-dark: #260101;
+$c-light: lighten(#648C88, 50%);
+$c-dark-green: #012326;
+$c-dark-green2: #012623;
+$c-middle-green: #01403A;
+$c-middle-green2: #025949;
+$c-light-green3: #648C88;
+$c-light-green2: #65cfc8;
+$c-light-yellow: #fdffd8;
+
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
+
+body {
+    background-color: $c-light;
+    color: $c-primary;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url('../img/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bg-none {
+    background: unset;
+}
+
+.card {
+    img {
+        height: 55vw;
+        object-fit: cover;
+
+        @media (min-width: $bootstrap-md) {
+            height: 30vw;
+        }
+
+        @media (min-width: $bootstrap-lg) {
+            height: 20vw;
+        }
+
+        //@media(min-width: 1600px) {
+        //    height: 12.5vw;
+        //}
+    }
+
+    img[alt] {
+        color: dimgray;
+    }
+
+    img:hover,
+    a:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.img-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+nav {
+    background: $c-dark-green;
+    background: -webkit-linear-gradient(59deg, $c-light-yellow, $c-light-green2);
+    background: linear-gradient(59deg, $c-light-yellow, $c-light-green2);
+}
+
+footer {
+    padding-top: 2em;
+    background: $c-dark-green;
+    background: -webkit-linear-gradient(-130deg, $c-light-green2, $c-light-green3, $c-dark-green2);
+    background: linear-gradient(-130deg, $c-light-green2, $c-light-green3, $c-dark-green2);
+    color:$c-light;
+    margin-top:100px;
+}

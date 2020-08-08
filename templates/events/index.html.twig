@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Events index{% endblock %}
+{% block jumboTitle %}Events Index{% endblock %}
+{% block jumboLeadtext %}Create new, show details, edit events or delete them.{% endblock %}
+
+{% block body %}
+
+    <a class="btn btn-outline-secondary rounded-0 btn-sm my-3" href="{{ path('events_new') }}">Create new</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>#</th>
+            <th>Image</th>
+            <th>Category</th>
+            <th>Name</th>
+            <th>Date and time</th>
+            <th class="">Email</th>
+            <th class="">Address</th>
+            <th class="">URL</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for event in events %}
+            <tr>
+                <td>
+                    <a class="btn btn-outline-secondary rounded-0 btn-sm btn-block"
+                       href="{{ path('events_show', {'id': event.id}) }}">show</a>
+                    <a class="btn btn-outline-danger rounded-0 btn-sm btn-block"
+                       href="{{ path('events_edit', {'id': event.id}) }}">edit</a>
+                </td>
+                <td>{{ event.id }}</td>
+                <th><img src="{{ asset("build/upload/"~event.image) }}" alt="none" class="img-thumbnail" width="100">
+                </th>
+                <td>{{ event.category }}</td>
+                <td>{{ event.name }}</td>
+                <td>
+                    {{ event.eventdate ? event.eventdate|date('d.m.yy') : '' }}, <br>
+                    {{ event.eventtime ? event.eventtime|date('H:i') : '' }}
+                </td>
+                <td class="">{{ event.email }}</td>
+                <td class="">{{ event.address }}</td>
+                <td class="">{{ event.eventurl }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="16">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <hr>
+    <a class="btn btn-outline-secondary rounded-0 btn-sm my-3" href="{{ path('events_new') }}">Create new</a>
+
+
+
+{% endblock %}
