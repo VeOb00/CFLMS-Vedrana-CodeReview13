@@ -33,11 +33,10 @@
         </tr>
         <tr>
             <th>Image name</th>
-{#            <td>{{ event.image }}</td>#}
-            <td> <img src="{{ asset("build/upload/"~event.image) }}" alt="" class="img-thumbnail img-preview"
-                      width="100">
+            {# <td>{{ event.image }}</td> #}
+            <td>
+                <img src="{{ asset("build/upload/"~event.image) }}" alt="" class="img-thumbnail img-preview">
             </td>
-
         </tr>
         <tr>
             <th>Capacity</th>
@@ -75,8 +74,10 @@
     </table>
 
     <div class="col-lg-3 mt-5">
-        <a class="btn btn-outline-primary btn-block btn-lg rounded-0" href="{{ path('events_edit', {'id': event.id}) }}">edit</a>
-        <a class="btn btn-outline-secondary btn-block btn-lg rounded-0" href="{{ path('events_index') }}">Back to list</a>
+        <a class="btn btn-outline-primary btn-block btn-lg rounded-0"
+           href="{{ path('events_edit', {'id': event.id}) }}">edit</a>
+        <a class="btn btn-outline-secondary btn-block btn-lg rounded-0" href="{{ path('events_index') }}">Back to
+            list</a>
         {{ include('events/_delete_form.html.twig') }}
     </div>
 

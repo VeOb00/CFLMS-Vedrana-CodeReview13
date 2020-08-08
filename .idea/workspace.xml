@@ -14,54 +14,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="396fdec5-a7a6-49c8-8b5d-895d94781e07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Big_Events.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_07_08_2020__09_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5d10d148-a704-49fd-8a40-6d7c4aa02e60.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5d10d148-a704-49fd-8a40-6d7c4aa02e60/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/hero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/upload/alley-1690053_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/upload/and-2297209_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/upload/korea-1922376_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/upload/tobago-4612257_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/upload/vienna-171444_1280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/assets.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/webpack_encore.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/webpack_encore.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20200807123241.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/EventsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomepageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Events.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/EventsType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/_navbar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/events/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/events/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/events/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/events/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/events/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/events/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/alley-1690053_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/and-2297209_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/korea-1922376_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/upload/tobago-4612257_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/events/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596785464565</updated>
       <workItem from="1596785465882" duration="38979000" />
-      <workItem from="1596867689692" duration="17302000" />
+      <workItem from="1596867689692" duration="17971000" />
     </task>
     <servers />
   </component>
