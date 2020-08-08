@@ -15,12 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="396fdec5-a7a6-49c8-8b5d-895d94781e07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/upload/alley-1690053_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/upload/and-2297209_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/upload/korea-1922376_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/upload/tobago-4612257_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/events/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/events/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596785464565</updated>
       <workItem from="1596785465882" duration="38979000" />
-      <workItem from="1596867689692" duration="17971000" />
+      <workItem from="1596867689692" duration="19254000" />
     </task>
     <servers />
   </component>
